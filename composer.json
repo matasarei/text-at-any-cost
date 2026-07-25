@@ -5,9 +5,22 @@
   "minimum-stability": "stable",
   "type": "library",
   "require": {
-    "php": ">=5.4"
+    "php": ">=8.1",
+    "ext-zip": "*",
+    "ext-dom": "*",
+    "ext-zlib": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.0"
   },
   "autoload": {
-    "psr-0": {"TextAtAnyCost": "src/"}
+    "psr-4": {
+      "TextAtAnyCost\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "TextAtAnyCost\\Tests\\": "tests/"
+    }
   }
 }
