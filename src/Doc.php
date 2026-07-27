@@ -2,7 +2,19 @@
 
 namespace TextAtAnyCost;
 
-/**
+class Doc extends CompoundBinaryTextParser
+{
+	/**
+	 * @param $filename
+	 *
+	 * @return string|null
+	 */
+	public static function doc2text($filename)
+	{
+		return (new self($filename))->parse();
+	}
+
+	/**
 	 * Parse function extends the parent one and returns
 	 * text from the given file. Returns false on failure.
 	 *

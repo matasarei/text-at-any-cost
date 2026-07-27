@@ -1,6 +1,9 @@
 TextAtAnyCost
 =============
 
+[![PHP version](https://img.shields.io/badge/PHP-%3E%3D7.4-8892BF.svg)](https://php.net/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 **Note: This project is an archived, historical example of parsing binary document formats natively in PHP.**
 
 A lightweight, zero-dependency PHP library for extracting raw text from various office and binary document formats (DOC, PPT, PDF, RTF, DOCX, ODT). 
@@ -9,7 +12,7 @@ A lightweight, zero-dependency PHP library for extracting raw text from various 
 This library attempts to parse the binary streams (like Microsoft's legacy Compound File Binary Format) and raw hex/byte representations directly in PHP to strip out the text. For zipped XML formats (like DOCX and ODT), it uses `ZipArchive` and regular expressions to extract text from the internal XML nodes.
 
 ### Requirements
-* PHP 8.1+
+* PHP 7.4+
 * `ext-zip`
 * `ext-dom`
 * `ext-zlib`
